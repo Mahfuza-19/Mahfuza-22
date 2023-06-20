@@ -1,0 +1,62 @@
+/* Unversal code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+}
+h1{
+    font-size: 60px;
+    color: darkmagenta;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.grid>div {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(45, 45, 169);
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-rows:repeat(3,60px);
+}
+
+.one{
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+}
+
+.two{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.three{
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.four{
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
